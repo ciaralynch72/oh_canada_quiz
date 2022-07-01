@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body {
+    font-family: "Libre Baskerville", "Open Sans", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #272635;
+    width: 100%;
+    min-height: 100%; 
+    text-align: center;
+}
+
+header {
+    background-color: #2c5530;
+    color: #FFFDFE;
+    max-height: 300px;
+    grid-area: header;
+    text-align: center;
+    padding: 30px;
+    font-size: 3rem;
+}
+
+
+#quizContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 20px;
+    grid-template-areas: "header header header"
+                         ". quizCard . "
+                        
+}
+
+#quizCard {
+    grid-area: quizCard;
+    max-height: 800px;
+    max-width: 1fr;
+    background-color: #f22b29;
+    color: #FFFDFE;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+
+}
