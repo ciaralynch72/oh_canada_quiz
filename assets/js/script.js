@@ -72,3 +72,4 @@ function createLi(name, choiceText) {
     e.innerHTML = radioHtml;        
     return e;
 }
+
