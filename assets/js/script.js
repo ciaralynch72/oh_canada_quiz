@@ -45,7 +45,7 @@ const correctAnswer = 0;
 
 startButton.onclick = function() {
     /*itterate through questions*/    
-    if(i > quizQuestions.length -1){/*go to first when reached last*/
+    if(i > quizQuestions.length -1){
        i=0;       
     }    
     displayQuestion(i);
@@ -63,7 +63,7 @@ function displayQuestion(qNum) {
         possibleAnswers.appendChild(createLi(radioBtnName,choiceText));
     }
 }
-
+//create list of possible answers 
 function createLi(name, choiceText) {
     let e = document.createElement('li');
     let radioHtml = '<input type="radio" name="' + name + '"';    
