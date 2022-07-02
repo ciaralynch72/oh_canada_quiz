@@ -23,6 +23,16 @@ header {
     padding: 30px;
     font-size: 3rem;
 }
+
+.quizInfo {
+    font-size: 1rem;
+    float: right;
+    padding: 10px;
+    display: flex;
+    align-items: baseline;
+    background-color: #0090C1;
+    margin: 10px;
+}
 #image {
     background: url('../images/rocky_mountain.jpg') no-repeat center center;
     object-fit: cover;
@@ -58,6 +68,8 @@ header {
 #question {
     padding: 5px;
     margin: 5px;
+    font-size: 1.5rem;
+    text-decoration: solid;
 }
 
 #multiChoice {
