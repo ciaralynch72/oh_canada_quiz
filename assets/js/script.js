@@ -1,10 +1,13 @@
 const questionHolder = document.getElementById('question')
 const possibleAnswers = document.getElementById('multiChoice')
 const startButton = document.getElementById('startQuiz')
+const nextQuestion = document.getElementById('nextQuestion')
+const welcomeMessage = document.getElementsByClassName('welcomeMessage')
+const hidden = document.getElementsByClassName('hidden')
 
 //Quiz questions 
 const quizQuestions = [{
-    question: "Which was Canada's first offical National Park?",
+    question: "Which was Canada's first official National Park?",
     choices: ['Banff', 'Glacier', 'Qausuittuq', 'Elk Island'],
     correctAnswer: 1
 },
@@ -39,18 +42,34 @@ const quizQuestions = [{
     correctAnswer: 4
 }]
 
+
 //Initiating some variables
 let i = 0;
 const correctAnswer = 0;
 
+nextQuestion.style.display = 'none';
+
+//Need to figure out how to only display the welcome message at the start
+
+// function welcome() {
+//     welcomeMessage.classList.add('hidden');
+//     welcome();
+//     console.log('why wont you work')
+// }
+
+
 startButton.onclick = function() {
-    /*itterate through questions*/    
+    /*itterate through questions*/  
     if(i > quizQuestions.length -1){
        i=0;       
     }    
     displayQuestion(i);
     i++;
+    startButton.innerHTML = "Next";
+    displayQuestion();
+    console.log('do you do anything')
 }
+
 //displayQuestion
 function displayQuestion(qNum) {
     let individualQuestion = quizQuestions[i];
@@ -65,11 +84,20 @@ function displayQuestion(qNum) {
 }
 //create list of possible answers 
 function createLi(name, choiceText) {
-    let e = document.createElement('li');
+    let list = document.createElement('li');
     let radioHtml = '<input type="radio" name="' + name + '"';    
     radioHtml += '/>';
     radioHtml += choiceText;        
-    e.innerHTML = radioHtml;        
-    return e;
+    list.innerHTML = radioHtml;
+    return list;
 }
+
+
+
+
+
+
+
+
+
 
