@@ -92,12 +92,3 @@ function createLi(name, choiceText) {
     return list;
 }
 
-
-
-
-
-
-
-
-
-

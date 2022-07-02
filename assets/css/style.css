@@ -46,7 +46,7 @@ header {
 /* Main card to display quiz informaiton */
 #quizCard {
     grid-area: quizCard;
-    height: 700px;
+    height: 450px;
     max-width: 1fr;
     background-color: #f22b29;
     color: #FFFDFE;
@@ -70,13 +70,14 @@ ul li {
     padding: 15px;
     margin: 5px;
 }
-
+/*Get button to stick to the bottom of the grid*/
 #startQuiz, #nextQuesion {
     padding: 15px;
     background-color: #0090C1;
     color: #FFFDFE;
     border: #FFFDFE 2px;
     cursor: pointer;
+   
 }
 
 #startQuiz:hover {
@@ -93,3 +94,4 @@ p {
 .hidden{
     display: none;
 }
+
