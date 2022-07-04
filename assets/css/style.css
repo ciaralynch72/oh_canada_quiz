@@ -50,7 +50,9 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     border-radius: 20px;
     grid-template-areas: "header header header"
+                         ". . ."
                          ". quizCard . "
+                         ". . ."
                         
 }
 /* Main card to display quiz informaiton */
@@ -58,12 +60,14 @@ header {
     grid-area: quizCard;
     min-height: 550px;
     max-width: 1fr;
-    background-color: #f22b29;
+    background-color: #d1211e;
     color: #FFFDFE;
     text-align: center;
     padding: 10px;
     margin: 10px;
-    
+    border-radius: 5px;
+    padding: 10px;
+   
 }
 
 #question {
@@ -84,9 +88,9 @@ ul li {
     margin: 5px;
 }
 /*Get button to stick to the bottom of the grid*/
-button, #startQuiz {
+#startQuiz {
     padding: 15px;
-    background-color:  #0E9FDE ;
+    background-color: #2c5530 ;
     color: #FFFDFE;
     border: #FFFDFE 2px;
     cursor: pointer;
@@ -100,6 +104,33 @@ button, #startQuiz {
     color: #FFFDFE;
 }
 
+#nextQuestion {
+    cursor: pointer;
+    background-color: #0E2C42;
+    color: #FFFDFE;
+    padding: 20px;
+}
+
+#nextQuestion:hover {
+    cursor: pointer;
+    background-color: #094774;
+    color: #FFFDFE;
+}
+
+#finish {
+    padding: 15px;
+    background-color: #2c5530 ;
+    color: #FFFDFE;
+    border: #FFFDFE 2px;
+    cursor: pointer;
+    text-align: center;;   
+}
+
+#finish:hover {
+    cursor: pointer;
+    background-color: #0E2C42;
+    color: #FFFDFE;
+}
 
 p {
     padding: 10px;
