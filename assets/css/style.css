@@ -19,6 +19,7 @@ body {
     background-size: cover;  
     height: fit-content;
     overflow: hidden;
+    
    
 }
 
@@ -55,13 +56,14 @@ header {
 /* Main card to display quiz informaiton */
 #quizCard {
     grid-area: quizCard;
-    height: 450px;
+    min-height: 550px;
     max-width: 1fr;
     background-color: #f22b29;
     color: #FFFDFE;
     text-align: center;
     padding: 10px;
     margin: 10px;
+    
 }
 
 #question {
@@ -82,19 +84,20 @@ ul li {
     margin: 5px;
 }
 /*Get button to stick to the bottom of the grid*/
-#startQuiz, #nextQuesion {
+button, #startQuiz {
     padding: 15px;
-    background-color: #0090C1;
+    background-color:  #0E9FDE ;
     color: #FFFDFE;
     border: #FFFDFE 2px;
     cursor: pointer;
+    text-align: center;
    
 }
 
 #startQuiz:hover {
     cursor: pointer;
-    background-color: #62bbd9;
-    color: #272635;
+    background-color: #0E2C42;
+    color: #FFFDFE;
 }
 
 
@@ -102,4 +105,10 @@ p {
     padding: 10px;
 }
 
+ul #questionCounter {
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    align-self: baseline;
+}
 

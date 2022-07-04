@@ -49,7 +49,23 @@ const quizQuestions = [{
     question: 'Which of the following was NOT a Canadian Invention?',
     choices: ['The Paint Roller', 'Peanut Butter', 'Electric Wheelchair', 'Chainsaw'],
     correctAnswer: 3
-}]
+},
+{
+    question: 'What is the nickname for the Canadian one dollar coin?',
+    choices: ['The Loonie', 'The Canuckle', 'The Hoser', 'The Johnny Mac'],
+    correctAnswer: 0
+},
+{
+    question: 'How many oceans border Canada?',
+    choices: ['1', '2', '3', '4'],
+    correctAnswer: 2
+},
+{
+    question: 'How is a Canadian Tuxedo?',
+    choices: ['All denimn outfit', 'A drink', 'Ski outfit', 'Red and white tuxedo'],
+    correctAnswer: 2
+}
+]
 
 function setup () {
     nextQuestion.style.display = 'none';
@@ -73,7 +89,7 @@ startButton.onclick = function() {
     quizInfo.style.display = 'block';
 
     displayQuestion(currentquestion);
-    questionCounter.innerHTML = 'Question 1 of' + quizQuestions.length;
+    questionCounter.innerHTML = 'Question 1 of ' + quizQuestions.length;
     console.log('check start button') //remove
 }
 
@@ -120,7 +136,7 @@ finish.onclick = function() {
 
 // update the question counter
 function updateQuestionCounter (number) {
-    questionCounter.innerHTML = "Question " + number + " of " + quizQuestions.length;
+    questionCounter.innerHTML = "Question " + number + " of  " + quizQuestions.length;
 }
 
 //display each question 
