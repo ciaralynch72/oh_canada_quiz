@@ -74,7 +74,7 @@ startButton.onclick = function() {
 
     displayQuestion(currentquestion);
     questionCounter.innerHTML = 'Question 1 of' + quizQuestions.length;
-    console.log('check start button')
+    console.log('check start button') //remove
 }
 
 nextQuestion.onclick = function() {
@@ -90,5 +90,32 @@ nextQuestion.onclick = function() {
     }
 }
  
+//iterate through all question answer options and if the radio box is checked, store that choice in the array
+function chooseSelection() {
+    var radioButtons = document.getElementsByName("question"+currentquestion+"_choice")
+
+    for (var i = 0; i < radioButtons.length; i++) {
+        console.log(radioButtons[i]) // remove
+     if (radioButtons[i].checked) {
+        choices[currentquestion] = i;
+    }
+}
+}
+
+finish.onclick = function() {
+    chooseSelection();
+    questionCounter.style.display = 'none';
+    result.style.display = 'block';
+
+    var numberCorrectAnswers = 0;
+    console.log('choices') //remove
+
+    for( var i = 0; i < quizQuestions.length; i++) {
+        if (quizQuestions[i].correctAnswer == choices[i]) {
+            numberCorrectAnswers++;
+        }
+    }
+     result.innerHTML = "Score: " + numberCorrectAnswers + " of " + quizQuestions.length;
+}
 
 
