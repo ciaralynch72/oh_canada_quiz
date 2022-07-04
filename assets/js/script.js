@@ -51,7 +51,6 @@ const quizQuestions = [{
     correctAnswer: 3
 }]
 
-//when the user clicks start it will rest, hide the start button and show the next button
 function setup () {
     nextQuestion.style.display = 'none';
     finish.style.display = 'none';
@@ -60,5 +59,36 @@ function setup () {
 }
 
 
+//when the user clicks start it will rest, hide the start button and show the next button
+startButton.onclick = function() {
+    choices = [];
+    currentquestion = 0; //fix naming convention
+    startButton.style.display = 'none';
+    finish.style.display = 'none';
+    welcomeMessage.style.display = 'none';
+    result.style.display = 'none';
+
+    nextQuestion.style.display = 'block';
+    questionCounter.style.display = 'block';
+    quizInfo.style.display = 'block';
+
+    displayQuestion(currentquestion);
+    questionCounter.innerHTML = 'Question 1 of' + quizQuestions.length;
+    console.log('check start button')
+}
+
+nextQuestion.onclick = function() {
+    chooseSelection();
+    currentquestion++;
+    displayQuestion(currentquestion);
+    updateQuestionCounter(currentquestion + 1);
+
+    //option to finish quiz at the end
+    if(currentquestion == quizQuestions.length -1) {
+        nextQuestion.style.display = 'none';
+        finish.style.display = 'block';
+    }
+}
+ 
 
 
