@@ -2,10 +2,17 @@ const questionHolder = document.getElementById('question')
 const possibleAnswers = document.getElementById('multiChoice')
 const startButton = document.getElementById('startQuiz')
 const nextQuestion = document.getElementById('nextQuestion')
+const finish = document.getElementById('finish')
+const quizInfo = document.getElementById('quizInfo')
+const questionCounter = document.getElementById('questionCounter')
+const welcomeMessage = document.getElementById('welcomeMessage')
+const result = document.getElementById('result')
+ 
+// the current question the user is on
+let currentquestion = 0;
 
-const scoreCounter = document.getElementById('scoreCounter')
-// const welcomeMessage = document.getElementsByClassName('welcomeMessage')
-// const hidden = document.getElementsByClassName('hidden')
+// the answers they have chosen
+let choices = [];
 
 //Quiz questions 
 const quizQuestions = [{
@@ -44,73 +51,14 @@ const quizQuestions = [{
     correctAnswer: 3
 }]
 
-
-//Initiating some variables
-let i = 0;
-const currentQuestion = 0;
-//Initial score is 0
-
-
-nextQuestion.style.display = 'none';
-
-//Need to figure out how to only display the welcome message at the start
-
-// function welcome() {
-//     welcomeMessage.classList.add('hidden');
-//     welcome();
-//     console.log('why wont you work')
-// }
-
-
-startButton.onclick = function() {
-    /*iterate through all the questions*/  
-    if(i > quizQuestions.length -1){
-       i=0;       
-    }    
-    displayQuestion(i);
-    i++;
-    startButton.innerHTML = "Next";
-    console.log('Start Function')
+//when the user clicks start it will rest, hide the start button and show the next button
+function setup () {
+    nextQuestion.style.display = 'none';
+    finish.style.display = 'none';
+    questionCounter.style.display = 'none';
+    result.style.display = 'none';
 }
 
-//displayQuestion
-function displayQuestion(qNum) {
-    let individualQuestion = quizQuestions[i];
-    questionHolder.innerText = individualQuestion.question;
 
-    possibleAnswers.innerHTML = ""; //reset choices list
-    for(key in individualQuestion.choices){
-        let radioBtnName = "question"+i+"_choice";
-        let choiceText = individualQuestion.choices[key];
-        possibleAnswers.appendChild(createLi(radioBtnName,choiceText));
-    }
-    console.log('display function ')
-}
-//create list of possible answers 
-function createLi(name, choiceText) {
-    let list = document.createElement('li');
-    let radioHtml = '<input type="radio" name="' + name + '"';    
-    radioHtml += '/>';
-    radioHtml += choiceText;        
-    list.innerHTML = radioHtml;
-    console.log('creat list items')
-    return list;
-}
-// //come back to this
-// function questionCounter() {
-//     let counter = 0;
-//     questionCounter.parseInt;
-//     counter.innerText = counter++;
-// }
-// // Need to log correct answer
-// function checkAnswer(answer) {
-//     let rightAnswer = quizQuestions[currentQuestion].correctAnswer;
-//     if (rightAnswer !== correctAnswer) {
-//         console.log('notCorrect();');
 
-//     } else {
-//         console.log('isCorrect();');
-        
-//     }
-// }
-// checkAnswer();
+
