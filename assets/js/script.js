@@ -2,6 +2,8 @@ const questionHolder = document.getElementById('question')
 const possibleAnswers = document.getElementById('multiChoice')
 const startButton = document.getElementById('startQuiz')
 const nextQuestion = document.getElementById('nextQuestion')
+
+const scoreCounter = document.getElementById('scoreCounter')
 // const welcomeMessage = document.getElementsByClassName('welcomeMessage')
 // const hidden = document.getElementsByClassName('hidden')
 
@@ -9,7 +11,7 @@ const nextQuestion = document.getElementById('nextQuestion')
 const quizQuestions = [{
     question: "Which was Canada's first official National Park?",
     choices: ['Banff', 'Glacier', 'Qausuittuq', 'Elk Island'],
-    correcAnswer: 0
+    correctAnswer: 0
 },
 {
     question: 'What is a toque?',
@@ -45,7 +47,9 @@ const quizQuestions = [{
 
 //Initiating some variables
 let i = 0;
-const currentquestion = 0;
+const currentQuestion = 0;
+//Initial score is 0
+
 
 nextQuestion.style.display = 'none';
 
@@ -92,9 +96,21 @@ function createLi(name, choiceText) {
     console.log('creat list items')
     return list;
 }
+// //come back to this
+// function questionCounter() {
+//     let counter = 0;
+//     questionCounter.parseInt;
+//     counter.innerText = counter++;
+// }
+// // Need to log correct answer
+// function checkAnswer(answer) {
+//     let rightAnswer = quizQuestions[currentQuestion].correctAnswer;
+//     if (rightAnswer !== correctAnswer) {
+//         console.log('notCorrect();');
 
-function questionCounter() {
-    let counter = parseInt(document.getElementById("questionCounter").innerText);
-    document.getElementById("questionCounter").innerText = ++counter;
-}
-
+//     } else {
+//         console.log('isCorrect();');
+        
+//     }
+// }
+// checkAnswer();

@@ -41,7 +41,7 @@ To deliver a site to meet user needs I will need to have to following features i
 
 ### Structure ###
 
-This will be a simple website where the user will be presented with some general information on the quiz and the abilty to input their name and then press the 'Start quiz' button that will lead them through a series of questions testing their general knowlege of Canada and informing them of facts about each correct answer.
+This will be a simple website where the user will be presented with some welcome information on the quiz. When the user clicks the 'Start quiz' button that will lead them through a series of questions testing their general knowlege of Canada and informing them of facts about each correct answer.
 
 The site will be easy to navigate and intuitive to all the user to have a pleasant experience. 
 
