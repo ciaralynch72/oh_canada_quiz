@@ -118,4 +118,9 @@ finish.onclick = function() {
      result.innerHTML = "Score: " + numberCorrectAnswers + " of " + quizQuestions.length;
 }
 
+function updateQuestionCounter (number) {
+    questionCounter.innerHTML = "Question " + number + " of " + quizQuestions.length;
+}
+
+
 
