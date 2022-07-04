@@ -148,6 +148,12 @@ function createLi (name, choiceText) {
     return list;
 }
 
+function questionCounterr() {
+    let counter = parseInt(document.getElementById("questionCounter").innerText);
+    document.getElementById("questionCounter").innerText = ++counter;
+}
+ 
+setup();
 
 
 

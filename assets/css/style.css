@@ -11,7 +11,15 @@ body {
     font-size: 1rem;
     color: #272635; 
     text-align: center;
-    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/rocky_mountain.jpg') no-repeat center center fixed;
+    background-size: cover;  
+    height: fit-content;
+    overflow: hidden;
+   
 }
 
 header {
@@ -33,15 +41,6 @@ header {
     background-color: #0090C1;
     margin: 10px;
 }
-#image {
-    background: url('../images/rocky_mountain.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;  
-} 
-
-
 
 
 /*To hold all quiz elements and to create a grid display*/
@@ -103,7 +102,4 @@ p {
     padding: 10px;
 }
 
-.hidden{
-    display: none;
-}
 
