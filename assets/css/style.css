@@ -25,7 +25,7 @@ body {
 
 header {
     background-color: #2c5530;
-    color: #FFFDFE;
+    color: #F2F2F2;
     max-height: 300px;
     grid-area: header;
     text-align: center;
@@ -65,9 +65,17 @@ header {
     text-align: center;
     padding: 10px;
     margin: 10px;
-    border-radius: 5px;
-    padding: 10px;
-   
+  
+}
+
+#quizInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quizInfo button {
+    justify-content: inherit;
 }
 
 #question {
@@ -82,12 +90,20 @@ header {
     text-align: left;
     list-style-type: none;
 }
+ 
 
 ul li {
     padding: 15px;
     margin: 5px;
 }
 /*Get button to stick to the bottom of the grid*/
+ul #startQuiz {
+    position:absolute;
+    bottom:0;
+
+}
+
+
 #startQuiz {
     padding: 15px;
     background-color: #2c5530 ;
@@ -95,6 +111,11 @@ ul li {
     border: #FFFDFE 2px;
     cursor: pointer;
     text-align: center;
+    width: 50%;
+    vertical-align:center;
+   
+    margin-top:0;
+    margin-bottom:10px;
    
 }
 
@@ -133,7 +154,8 @@ ul li {
 }
 
 p {
-    padding: 10px;
+    padding: 15px;
+    margin: 15px;
 }
 
 ul #questionCounter {
@@ -143,3 +165,6 @@ ul #questionCounter {
     align-self: baseline;
 }
 
+h1 {
+    font-size: 30px;
+}
