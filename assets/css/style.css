@@ -13,12 +13,12 @@ body {
     text-align: center;
     padding: 0;
     margin: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: url('../images/rocky_mountain.jpg') no-repeat center center fixed;
     background-size: cover;  
     height: fit-content;
-    overflow: hidden;
+    
     
    
 }
@@ -31,7 +31,7 @@ header {
     text-align: center;
     padding: 30px;
     font-size: 2.5rem;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 .quizInfo {
@@ -49,21 +49,22 @@ header {
 #quizContainer {
     padding-top: 40px ;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 100%;
+    grid-template-columns: 1fr 3fr 1fr;
     border-radius: 20px;
     text-align: center;
-    grid-template-areas: "header header header header"
-                         ". . . ."
-                         ". quizCard quizCard . "
-                         ". . . ."
+    grid-template-areas: "header header header"
+                         ". . . "
+                         ". quizCard . "
+                         ". . . "
                         
 }
 /* Main card to display quiz informaiton */
 #quizCard {
     
     grid-area: quizCard;
-    min-height: 550px;
-    max-width: 2fr;
+    min-height: 70%;
+    max-width: 90%;
     background-color: #d1211e;
     color: #FFFDFE;
     text-align: center;
@@ -80,21 +81,20 @@ header {
 
 
 #question {
-    padding: 10px;
-    margin: 20px;
+   
     font-size: 1.5rem;
     text-decoration: solid;
 }
 
 #multiChoice {
-    padding: 10px;
+ 
     text-align: left;
-    margin: 20px;
+ 
     list-style-type: none;
 }
  
 
-ul li {
+li {
     padding: 15px;
     margin: 5px;
 }
@@ -169,7 +169,8 @@ ul #questionCounter {
     padding: 20px;
     margin: 15px;
     align-self: baseline;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    font-weight: bold ;
 }
 
 h1 {
