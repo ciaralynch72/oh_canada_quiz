@@ -30,7 +30,8 @@ header {
     grid-area: header;
     text-align: center;
     padding: 30px;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
 }
 
 .quizInfo {
@@ -46,20 +47,23 @@ header {
 
 /*To hold all quiz elements and to create a grid display*/
 #quizContainer {
+    padding-top: 40px ;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     border-radius: 20px;
-    grid-template-areas: "header header header"
-                         ". . ."
-                         ". quizCard . "
-                         ". . ."
+    text-align: center;
+    grid-template-areas: "header header header header"
+                         ". . . ."
+                         ". quizCard quizCard . "
+                         ". . . ."
                         
 }
 /* Main card to display quiz informaiton */
 #quizCard {
+    
     grid-area: quizCard;
     min-height: 550px;
-    max-width: 1fr;
+    max-width: 2fr;
     background-color: #d1211e;
     color: #FFFDFE;
     text-align: center;
@@ -74,13 +78,10 @@ header {
     align-items: center;
 }
 
-#quizInfo button {
-    justify-content: inherit;
-}
 
 #question {
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
+    margin: 20px;
     font-size: 1.5rem;
     text-decoration: solid;
 }
@@ -88,6 +89,7 @@ header {
 #multiChoice {
     padding: 10px;
     text-align: left;
+    margin: 20px;
     list-style-type: none;
 }
  
@@ -96,13 +98,6 @@ ul li {
     padding: 15px;
     margin: 5px;
 }
-/*Get button to stick to the bottom of the grid*/
-ul #startQuiz {
-    position:absolute;
-    bottom:0;
-
-}
-
 
 #startQuiz {
     padding: 15px;
@@ -113,9 +108,9 @@ ul #startQuiz {
     text-align: center;
     width: 50%;
     vertical-align:center;
-   
-    margin-top:0;
+    margin-top:10px;
     margin-bottom:10px;
+    text-transform: uppercase;
    
 }
 
@@ -130,6 +125,12 @@ ul #startQuiz {
     background-color: #0E2C42;
     color: #FFFDFE;
     padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
 }
 
 #nextQuestion:hover {
@@ -144,7 +145,12 @@ ul #startQuiz {
     color: #FFFDFE;
     border: #FFFDFE 2px;
     cursor: pointer;
-    text-align: center;;   
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-transform: uppercase;  
 }
 
 #finish:hover {
@@ -161,8 +167,9 @@ p {
 ul #questionCounter {
     text-align: center;
     padding: 20px;
-    margin: 5px;
+    margin: 15px;
     align-self: baseline;
+    letter-spacing: 2px;
 }
 
 h1 {
