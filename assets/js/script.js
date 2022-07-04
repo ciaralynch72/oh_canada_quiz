@@ -118,9 +118,36 @@ finish.onclick = function() {
      result.innerHTML = "Score: " + numberCorrectAnswers + " of " + quizQuestions.length;
 }
 
+// update the question counter
 function updateQuestionCounter (number) {
     questionCounter.innerHTML = "Question " + number + " of " + quizQuestions.length;
 }
+
+//display each question 
+function displayQuestion(qNum) {
+    let individualQuestion = quizQuestions[currentquestion];
+    questionHolder.innerText = individualQuestion.question;
+ //reset choices list
+    possibleAnswers.innerHTML = ""; 
+    for(key in individualQuestion.choices){
+        let radioBtnName = "question"+currentquestion+"_choice";
+        let choiceText = individualQuestion.choices[key];
+        possibleAnswers.appendChild(createLi(radioBtnName,choiceText));
+    }
+    console.log('display function')
+}
+
+//create list of possible answers 
+function createLi (name, choiceText) {
+    let list = document.createElement('li')
+    let radioHtml = '<input type="radio" name="' + name + '"';    
+    radioHtml += '/>';
+    radioHtml += choiceText;        
+    list.innerHTML = radioHtml;
+    console.log('creat list items')
+    return list;
+}
+
 
 
 
