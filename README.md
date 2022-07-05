@@ -3,6 +3,17 @@
 For my second milestone project I have came up with an idea to create a fun quiz about Canada. Canada is quite often overshadowed by it's neighbor to the south so I wanted to create a quiz that showcases some intereseting facts about Canada. 
 
 
+* [Site owner's goals](<#site-owner's-goals>)
+* [External user goals](<#external-user-goals>)
+* [UX](<#ux>)
+    * [Strategy](<#strategy>)
+    * [Scope](<#scope>)
+    * [Structure](<#structure>)
+    * [Skeleton](<#skeleton>)
+    * [sureface](<#surface>)
+* [Features](<#features>)
+
+
 ### Site owner's goals ###
 To create a fun and engaging quiz using html, css and vanilla javascript that will allow a player to answer a series of questions and get their score at the end. 
 To do this I plan to implement the following features:
@@ -84,6 +95,7 @@ The start bottom is below the welcome message and when hoovered over it will cha
 
 #### Questions ####
 A set of 10 questons will be displayed to the user as part of the quiz. When the user chooses one question and clicks the next button a new questions will display.
+
 ![Questions](docs/readme_images/questions.GIF)
 
 #### Multi-choice Answers ####
@@ -114,7 +126,105 @@ I look forward to expanding the quiz by adding images and information to inform 
 #### More questions so that the questons are changed up if the user wishes to play again ####
 I would like to eventually to source questions via API and sort them randomly so that the user can reset the quiz and answer different questions and continue to test their knowledge. 
 
+## Technologies Used
+I have used several technologies that have enabled this design to work:
+
+- **HTML** used to create the static website
+- **CSS** used to style the website
+- **JavaScript** use to create the functionality of the game
+- [**Google Fonts**](https://fonts.google.com/)
+    - Used to obtain the fonts Open Sans and Libre Bakersville
+- [Font Awesome](https://fontawesome.com/)
+    - Used to obtain the maple leaf icon used in the footer and the icons used on the Home page
+- [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+    - Used as a primary method of fixing spacing issues, finding bugs, and testing responsiveness across the project.
+- [GitHub](https://github.com/)
+    - Used to store code for the project after being pushed.
+- [Git](https://git-scm.com/)
+    - Used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+- [Gitpod](https://www.gitpod.io/)
+    - Used as the development environment.
+- [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
+    - Used to detect overflow of elements, which allowed me to quickly debug any issues.
+- [Coloors](https://coolors.co/cf5c36-70a37f-92afd7-274156-ffd166)
+    - Used to create a colour palette for the website 
+- [Color Contrast Accessibility Validator](https://color.a11y.com/)
+    - Allowed me to test the colour contrast of my webpage.
+- [W3C Markup Validation Service](https://validator.w3.org/) 
+    - Used to validate all HTML code written and used in this webpage.
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
+    - Used to validate all CSS code written and used in this webpage.
+- [AmIResponsive](http://ami.responsivedesign.is/)
+    - Used to generate responsive image used in README file.
+- Chrome Developer Tools
+    - Used to test the HTML and CSS in the building phase for both functionality and responsiveness
 
 
-## Credits ##
-I have used the following tutorials as inspiration to create this quiz [SitePoint](https://www.sitepoint.com/simple-javascript-quiz/) and Youtube, most notably [CodingNepal](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=5s) and [BrianDesign](https://www.youtube.com/watch?v=f4fB9Xg2JEY)
+
+
+
+## Deployment ##
+
+This site was deployed via GitHub pages using the following steps:
+1. Open GitHub and locate the [O Canada Quiz Repository](https://github.com/ciaralynch72/oh_canada_quiz)
+2. At the top of the repository, locate the "Settings" button on the menu
+2. In the left-hand navigation section scroll down to the **Pages** button
+3. From the source section drop-down menu change Branch from **none** to **main** and click the **Save**
+4. After several minutes the website will be live and and there will be the link to [live site](https://ciaralynch72.github.io/oh_canada_quiz/)
+
+## Clone Project ##
+
+1. Go to Git Hub
+2. Go to [O Canada Quiz Repository](https://github.com/ciaralynch72/oh_canada_quiz)
+3. Click on it to go to main repository site
+4. Click on the Code drop down button menu next to the greeen Gippod button
+5. Click on HTTP section you will see the http of the repository click on the window next to it it will say copied
+6. Clikced on Download and Zip
+7. Clicked on Open with GitHubDesktop
+
+## Credits
+
+- #### Copy
+The questions for this quiz were created with the help of my colleagues in Canada who all shared with me facts about Canada. 
+
+- #### Design
+Design was inspired from the Canadian landscape. 
+
+- #### Media
+Images were taken from [Pexels](https://www.pexels.com/collections/agriculture-84ityxd/), [Unsplash](https://unsplash.com/s/photos/farm) and [Ireland's Content Pool](https://www.irelandscontentpool.com/en/_/login?login.redirectlogin=/en) I resized all media with photoshop and paint. 
+
+- #### Graphics
+The hero graphic on the main page was downloaded from [Vecteezy](https://www.vecteezy.com/free-vector/everest).
+ 
+- #### Online learning resources
+Stackoverflow, YouTube, blogs, and tutorials. I have used the following tutorials as inspiration to create this quiz [SitePoint](https://www.sitepoint.com/simple-javascript-quiz/) and Youtube, most notably [CodingNepal](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=5s) and [BrianDesign](https://www.youtube.com/watch?v=f4fB9Xg2JEY).
+
+- #### Head first JavaScript Progamming 
+I began reading this book after a recommendation by my fellow student Laura Mayock and I found it helped greatly in breaking down the fundementals of JavaScript and I look forward on growing my skills base with it's help.
+
+- #### README.md
+I learned alot about how to approach my README file from past projects of Code Institute student which helped me navigate this huge learning curve. Kudos to those who have shared past projects. 
+
+- #### Slack
+Code Institute's slack channel was a huge help in helping with problems and to give a sense of what was expected for projects. Support from fellow students was greatly appreciated.
+
+- #### Mentor
+My mentor Guido Cecilio was extremely generous with his time and sharing helpful tips with me throughout out mentor sessions. It really helped to know I was on the right track and to have his expertise to learn from. 
+
+- #### Cohort Facilitators
+Code Institutes Facilitators were great throughout the project, answering questions and encouraging us to the finish line. They also made it easy to stay on track and keep everyone up to date. Thanks Kenan Wright and Kascia Bogucka.
+
+- #### Cohort Students
+Big thanks to my cohort for the positivity and encouragement in the slack group. Knowing everyone was in the same both with the jump in learning in JavaScript made it easier to get through this project. 
+
+- #### Code Institute and MSLETB
+Big thank you to Code institute for creating such a great learning platform that gave me the tools and knowledge to create this website and for MSLETB for the opportunity to participate in this course. 
+
+- #### My good friend and fellow developer Cillian O'Keeffe
+Cillian was kind enough to walk me through the code I would need for the outcomes. He explained the logic and helped to point me in the right direction which has been invaluable for me for this project as JavaScript  is all new to me and it is alot of information to process at once.
+
+##### Thank You!
+Thank you for taking time review my project.
+
+
+
