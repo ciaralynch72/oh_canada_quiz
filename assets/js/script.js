@@ -63,7 +63,7 @@ const quizQuestions = [{
 {
     question: 'What is a Canadian Tuxedo?',
     choices: ['All denimn outfit', 'A drink', 'Ski outfit', 'Red and white tuxedo'],
-    correctAnswer: 2
+    correctAnswer: 0
 }
 ]
 

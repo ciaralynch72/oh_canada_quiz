@@ -1,4 +1,4 @@
-# O, Canada! #
+# [O Canada!](https://ciaralynch72.github.io/oh_canada_quiz/)
 ![Responisve design](docs/readme_images/responsive_screens.GIF)
 For my second milestone project I have came up with an idea to create a fun quiz about Canada. Canada is quite often overshadowed by it's neighbor to the south so I wanted to create a quiz that showcases some intereseting facts about Canada. 
 
@@ -74,7 +74,7 @@ A basic header with the name of the quiz with an icon from font awesome.
 
 #### Quiz Card ####
 The quiz card will hold all the contents of the quiz so the user will focus on this area while completing the quiz.
-![Welcome Message](docs/readme_images/welcomeMessage.GIF)
+![Welcome Message](docs/readme_images/welcome_message.GIF)
 
 #### Welcome Message ####
 A welcome message will display to the user to introduce them to the quiz.
@@ -84,6 +84,7 @@ The start bottom is below the welcome message and when hoovered over it will cha
 
 #### Questions ####
 A set of 10 questons will be displayed to the user as part of the quiz. When the user chooses one question and clicks the next button a new questions will display.
+![Questions](docs/readme_images/questions.GIF)
 
 #### Multi-choice Answers ####
 The user will be presented with four multi-choice radio buttons to choose an anwers to the quiz question. 
@@ -99,10 +100,21 @@ The question counter appears at the bottom of the quiz one the start button is c
 
 #### Score Counter ####
 On the last question the next button will transition to a finish button. When the user click on it, it will relay their score back to them.
+![Score Tally](docs/readme_images/score_tally.GIF)
 
 ### Features to include in the future ####
+In the future I would like to add a lot more functionality to this site as my skills and knowledge of JavaScript increase. As I tried to work out as much JS as possible by myself, although a great learning, it did leave me shy on time to add features which I orginally wanted as part of my quiz. 
 
-#### 
+#### User Name ####
+I would like to add a feature to store the users name and display high scores. 
+
+#### Images and infomation about each correct answer ####
+I look forward to expanding the quiz by adding images and information to inform the user more about the correct answer as I feel this will bring greater user satisfaction. 
+
+#### More questions so that the questons are changed up if the user wishes to play again ####
+I would like to eventually to source questions via API and sort them randomly so that the user can reset the quiz and answer different questions and continue to test their knowledge. 
+
+
 
 ## Credits ##
 I have used the following tutorials as inspiration to create this quiz [SitePoint](https://www.sitepoint.com/simple-javascript-quiz/) and Youtube, most notably [CodingNepal](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=5s) and [BrianDesign](https://www.youtube.com/watch?v=f4fB9Xg2JEY)
