@@ -38,12 +38,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #d1211e ;
+    color: #0090C1 ;
     border-bottom: 1px solid #F2F2F2;
 }
 
 .active {
-    color: #d1211e;
+    color: #0090C1;
     border-bottom: 1px solid whitesmoke;
 }
 
@@ -253,9 +253,9 @@ h1 {
     grid-area: contact_form;
     background-color: #d1211e;
 }
- h3 { 
-    padding: 5px;
-    margin: 5px;
+ h2 h3 { 
+    padding: 10px;
+    margin: 10px;
  }
 
 
