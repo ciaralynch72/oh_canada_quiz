@@ -1,12 +1,12 @@
-const questionHolder = document.getElementById('question')
-const possibleAnswers = document.getElementById('multiChoice')
-const startButton = document.getElementById('startQuiz')
-const nextQuestion = document.getElementById('nextQuestion')
-const finish = document.getElementById('finish')
-const quizInfo = document.getElementById('quizInfo')
-const questionCounter = document.getElementById('questionCounter')
-const welcomeMessage = document.getElementById('welcomeMessage')
-const result = document.getElementById('result')
+const questionHolder = document.getElementById('question');
+const possibleAnswers = document.getElementById('multiChoice');
+const startButton = document.getElementById('startQuiz');
+const nextQuestion = document.getElementById('nextQuestion');
+const finish = document.getElementById('finish');
+const quizInfo = document.getElementById('quizInfo');
+const questionCounter = document.getElementById('questionCounter');
+const welcomeMessage = document.getElementById('welcomeMessage');
+const result = document.getElementById('result');
  
 // the current question the user is on
 let currentquestion = 0;
@@ -65,7 +65,7 @@ const quizQuestions = [{
     choices: ['All denimn outfit', 'A drink', 'Ski outfit', 'Red and white tuxedo'],
     correctAnswer: 0
 }
-]
+];
 
 function setup () {
     nextQuestion.style.display = 'none';
@@ -90,7 +90,6 @@ startButton.onclick = function() {
 
     displayQuestion(currentquestion);
     questionCounter.innerHTML = 'Question 1 of ' + quizQuestions.length;
-    console.log('check start button') //remove
 }
 
 nextQuestion.onclick = function() {
@@ -124,7 +123,6 @@ finish.onclick = function() {
     result.style.display = 'block';
 
     var numberCorrectAnswers = 0;
-    console.log('choices') //remove
 
     for( var i = 0; i < quizQuestions.length; i++) {
         if (quizQuestions[i].correctAnswer == choices[i]) {
@@ -160,7 +158,6 @@ function createLi (name, choiceText) {
     radioHtml += '/>';
     radioHtml += choiceText;        
     list.innerHTML = radioHtml;
-    console.log('creat list items')
     return list;
 }
 
