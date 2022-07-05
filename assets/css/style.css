@@ -202,6 +202,9 @@ h1 {
 }
 
 /*Fun facts styling*/
+#background {
+    background-image: none;
+}
 #grid_container_gallery {
     display: grid;
     grid-template-columns: 1fr;
