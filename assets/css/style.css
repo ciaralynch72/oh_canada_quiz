@@ -99,6 +99,11 @@ nav li {
   
 }
 
+#welcomeMessage p {
+    padding: 5px;
+    margin: 5px;
+}
+
 #quizInfo {
     display: flex;
     justify-content: center;
@@ -248,12 +253,15 @@ h1 {
     grid-area: contact_form;
     background-color: #d1211e;
 }
-
+ h3 { 
+    padding: 5px;
+    margin: 5px;
+ }
 
 
 #form{
     color: #FFFDFE;
-    height: 525px;
+    height: 425px;
     padding: 5px;
     text-align: center;
     
