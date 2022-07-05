@@ -8,6 +8,8 @@
     <meta name="keywords" content="Canada quiz, test your canadian knowledge, Canada">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    
+   
     <title>Oh Canada</title>
 </head>
  <!--remove backgroud image -->
@@ -73,42 +75,106 @@
        
             </div>
 
+
+    <div class="container">
+      
+       
+          <h2 class="text-center">Interested in sharing your facts about Canada?</h2>
+          <!-- contact form -->
+          <form id="myForm">
+            <!-- name -->
+            
+              <label for="name" required>Full Name</label>
+              <br>
+              <input
+                type="name"
+                name="name"
+                class="form-control"
+                id="name"
+                placeholder="enter your name"
+              />
+              <br>
+            
+
+            <!-- email -->
+    
+              <label for="email" required>Email address</label>
+              <br>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="email"
+                placeholder="enter your email"
+              /> 
+              <br>
+         
+            <!-- message -->
+          
+              <label for="message">Fun Fact</label>
+              <br>
+              <textarea class="form-control" id="message" name="message" required></textarea>
+              <br>
+              <button type="submit"  required>Submit</button>
+            </div>
+
+          
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Email JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_UHpNJFij8MtQD1aAfs38X");
+      })();
+    </script>
+    <script>
+      // listen to the form submission
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const serviceID = "service_b4qmiqc";
+          const templateID = "template_fv38whr";
+
+          // send the email here
+          emailjs.sendForm(serviceID, templateID, this).then(
+            (response) => {
+              console.log("SUCCESS!", response.status, response.text);
+              alert("SUCCESS!");
+            },
+            (error) => {
+              console.log("FAILED...", error);
+              alert("FAILED...", error);
+            }
+          );
+        });
+    </script>
     
 
-      <!--form section -->
-        <div class="contact_form"> 
-           <div id="form">
-               <h3>Interested in sharing your facts about Canada?</h3>
-               
-           <form action="https://formdump.codeinstitute.net/" target="_blank" method="post" >
-               <label for="fname">First Name:</label>
-               <br>
-               <input type="text" id="fname" name="fname" placeholder="First Name" required>
-               <br>
-               <label for="lname">Last Name:</label>
-               <br>
-               <input type="text" id="lname" name="lname" placeholder="Last Name" required>
-               <br>
-               <label for="email">Email:</label>
-               <br>
-               <input type="email" id="email" name="email" placeholder="Email address" required>
-               <br>
-               <label for="textarea">Share a fun fact!</label>
-               <br>
-               <textarea name="message" style="width:60%; height: 140px;" id="textarea" required>Share your fun fact so that they can be added to the quiz!
-                   </textarea>
-                   <br>
-               <input type="submit" value="Submit">
-               <br>
-           </form>
-       </div>
-       <br>
-       
-   </div>
-
-
+    
 </div>
 <script src="https://kit.fontawesome.com/2688681897.js" crossorigin="anonymous"></script>
+<script src="assets/js/sendEmail.js"></script>
 
  <!--to make the carousel work -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
