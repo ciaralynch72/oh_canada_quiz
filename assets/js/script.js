@@ -41,7 +41,7 @@ const quizQuestions = [{
     correctAnswer: 1 
 },
 {
-    question: 'What animal is an offical emblem of Canada?',
+    question: 'What animal is an official emblem of Canada?',
     choices: ['Moose', 'Bear', 'Beaver', 'Racoon'],
     correctAnswer: 2
 },
@@ -90,7 +90,7 @@ startButton.onclick = function() {
 
     displayQuestion(currentquestion);
     questionCounter.innerHTML = 'Question 1 of ' + quizQuestions.length;
-}
+};
 
 nextQuestion.onclick = function() {
     chooseSelection();
@@ -103,14 +103,14 @@ nextQuestion.onclick = function() {
         nextQuestion.style.display = 'none';
         finish.style.display = 'block';
     }
-}
+};
  
 //iterate through all question answer options and if the radio box is checked, store that choice in the array
 function chooseSelection() {
-    var radioButtons = document.getElementsByName("question"+currentquestion+"_choice")
+    var radioButtons = document.getElementsByName("question"+currentquestion+"_choice");
 
     for (var i = 0; i < radioButtons.length; i++) {
-        console.log(radioButtons[i]) // remove
+        console.log(radioButtons[i]); // remove
      if (radioButtons[i].checked) {
         choices[currentquestion] = i;
     }
@@ -130,7 +130,7 @@ finish.onclick = function() {
         }
     }
      result.innerHTML = "Score: " + numberCorrectAnswers + " of " + quizQuestions.length;
-}
+};
 
 // update the question counter
 function updateQuestionCounter (number) {
@@ -143,17 +143,16 @@ function displayQuestion(qNum) {
     questionHolder.innerText = individualQuestion.question;
  //reset choices list
     possibleAnswers.innerHTML = ""; 
-    for(key in individualQuestion.choices){
+    for (var key in individualQuestion.choices) {
         let radioBtnName = "question"+currentquestion+"_choice";
         let choiceText = individualQuestion.choices[key];
         possibleAnswers.appendChild(createLi(radioBtnName,choiceText));
     }
-    console.log('display function')
 }
 
 //create list of possible answers 
 function createLi (name, choiceText) {
-    let list = document.createElement('li')
+    let list = document.createElement('li');
     let radioHtml = '<input type="radio" name="' + name + '"';    
     radioHtml += '/>';
     radioHtml += choiceText;        

@@ -221,6 +221,7 @@ h1 {
 
 .gallery_intro {
     grid-area: gallery_intro;
+    padding: 10px;
 }
 
 /* Fancybox Carousel*/
@@ -266,6 +267,7 @@ h1 {
     text-align: center;
     
 }
+
 
 input[type=text], select {
     width: 60%;

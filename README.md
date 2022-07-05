@@ -83,12 +83,16 @@ Below is a list of current features for the website. As I am completely new to J
 #### Header ####
 A basic header with the name of the quiz with an icon from font awesome.
 
+#### Navigation ####
+The navigation was added so that I could add a second page with more facts for the user. As I ran out of time to figure out a restart button I improvised and added a link back to the quiz. 
+![Navigation](docs/readme_images/navigation.GIF)
+
 #### Quiz Card ####
 The quiz card will hold all the contents of the quiz so the user will focus on this area while completing the quiz.
-![Welcome Message](docs/readme_images/welcome_message.GIF)
 
 #### Welcome Message ####
-A welcome message will display to the user to introduce them to the quiz.
+A welcome message will display to the user to introduce them to the quiz and to walk them throught the features they will come accross. 
+![Welcome Message](docs/readme_images/welcome_message.GIF)
 
 #### Start Button ####
 The start bottom is below the welcome message and when hoovered over it will change color and begin the quiz for the user.
@@ -96,7 +100,7 @@ The start bottom is below the welcome message and when hoovered over it will cha
 #### Questions ####
 A set of 10 questons will be displayed to the user as part of the quiz. When the user chooses one question and clicks the next button a new questions will display.
 
-![Questions](docs/readme_images/questions.GIF)
+![Questions](docs/readme_images/quesiton.JPG)
 
 #### Multi-choice Answers ####
 The user will be presented with four multi-choice radio buttons to choose an anwers to the quiz question. 
@@ -114,6 +118,13 @@ The question counter appears at the bottom of the quiz one the start button is c
 On the last question the next button will transition to a finish button. When the user click on it, it will relay their score back to them.
 ![Score Tally](docs/readme_images/score_tally.GIF)
 
+#### Fun Facts Page ####
+
+#### Fancy Box Carousel ####
+A gallery of images with more fun facts for the user to gain more knowledge if they wish
+
+#### Form to submit questions ####
+
 ### Features to include in the future ####
 In the future I would like to add a lot more functionality to this site as my skills and knowledge of JavaScript increase. As I tried to work out as much JS as possible by myself, although a great learning, it did leave me shy on time to add features which I orginally wanted as part of my quiz. 
 
@@ -125,6 +136,14 @@ I look forward to expanding the quiz by adding images and information to inform 
 
 #### More questions so that the questons are changed up if the user wishes to play again ####
 I would like to eventually to source questions via API and sort them randomly so that the user can reset the quiz and answer different questions and continue to test their knowledge. 
+
+#### Make the form a modal pop up ####
+
+#### Add a restart button function ####
+Add a feature so the user can return to the start of the quiz if they would like to play again
+
+#### A function to require the user to answer a question before moving on ####
+I would like to be able to require the user to choose an answer before iteration through the question
 
 ## Technologies Used
 I have used several technologies that have enabled this design to work:
@@ -158,6 +177,76 @@ I have used several technologies that have enabled this design to work:
     - Used to generate responsive image used in README file.
 - Chrome Developer Tools
     - Used to test the HTML and CSS in the building phase for both functionality and responsiveness
+
+## Testing
+
+ ### Validator Testing 
+
+ + Each page of HTML was tested using The Nu Html Checker. 
+
+ ![Validation results for all HTML docs](docs/readme_images/quiz_html.GIF)
+ ![Validation results for all HTML docs](docs/readme_images/fun_fact_html.GIF)
+
+
++ CSS was tested using W3C CSS Service. 
+
+ ![Validation results for CSS file](docs/readme_images/css.GIF)
+
+ ### Lighthouse
+
+ I tested each of my pages on lighthouse for both mobile and desktop.
+
+ + Quiz Page
+
+ ![Lighthouse results for home page](docs/readme_images/website_lighthouse.JPG)  
+
++ Fun Facts Page
+
+ ![Lighthouse results for community page](docs/readme_images/lighthouse_community.GIF) 
+
+ + Gallery Page 
+
+  ![Lighthouse results for gallery page]() 
+
+
+
+### Manual Testing
+
+Browsers manually tested:
+
+* Google Chrome
+* Mozilla Firefox
+* Microsoft EDGE
+* Safari
+
+Devices manally tested:
+* Samsung A52
+* Iphone 8
+* Ipad 
+* Laptop
+* 22" monitor
+
+I used both chrome dev tools and firefox dev tools throughout building my site to check for responsiveness and to make sure it was visually appealing.
+
+ ### User Story Testing
+
+      Expectations
+      As a user I wanted to:
+      1. Test my knowledge of Canadian general knowledge
+      2. Be easily navigate the quiz and facts page
+      3. To know how many quesitons I was going to answer
+      4. Recieve my score at the end 
+      5. Go the the facts page and learn and see more about Canada
+      Result
+      As a user I was able to:
+      1. Navigate the site easily
+      2. Test my knowledge by completing the quiz
+      3. See my score when I reach the last question of the quiz
+      4. Go to the fun facts page and learn more about Canada
+
+      
+
+
 
 
 
