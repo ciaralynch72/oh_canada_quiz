@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fun quiz to test peoples knowledge of Canada">
+    <meta name="keywords" content="Canada quiz, test your canadian knowledge, Canada">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <title>Oh Canada</title>
+</head>
+<body>
+    <!--main container -->
+   
+         
+    <header><i class="fab fa-canadian-maple-leaf"></i> O Canada! <i class="fab fa-canadian-maple-leaf"></i>
+        <nav id="nav">
+        <ul>
+          <li>
+              <a href="index.html" class="active">Quiz</a>
+          </li>
+          <li>
+              <a href="fun_facts.html" class="active">Learn More</a>
+            </nav>
+      </header>
+
+      <div id="grid_container_gallery">
+        <!--header -->
+  
+    <div class="gallery_intro">
+        <h2>Find out some more interesting facts about Canada </h2>
+        <p>Click through the carosel to see photos and facts about the great white North!</p>
+    </div>
+     <!-- Fancybox Carousel gallery-->
+
+     <div id="gallery">
+
+        <a href="images/bear.jpg" data-fancybox="gallery" data-caption="Bears are a common sight in Canada, home to 60% of the worlds entire bear population. The three species of bears native to Canada are the grizzlies, black and polar bears.">
+            <img src="images/bear_tn.jpg" alt="bear in the wild"/></a>
+
+        <a href="images/calgary.jpg" data-fancybox="gallery" data-caption="Calgary, Alberta is home to the world's richest tournament-style rodeo and is billed as the greatest outdoor show on earth">
+            <img src="images/calgary_tn.jpg" alt="rodeo competitor on a horse"/></a>
+
+        <a href="images/flag.jpg" data-fancybox="gallery" data-caption="Dr. George Stanley, a professor at the Royal Military College in Kingston, Ontario, came up with the red and maple leaf design.">
+            <img src="images/flag_tn.jpg" alt="The Canadian Flag"/></a>
+
+        <a href="images/lacross.jpg" data-fancybox="gallery" data-caption="Lacross is Canada's second official sport alongside hockey">
+            <img src="images/lacross_tn.jpg" alt="Girls playing lacross"/></a>
+
+        <a href="images/morraine_lake.jpg" data-fancybox="gallery" data-caption="This color is the result of a natural process referred to as “refraction.” The rock flour of the surrounding glaciers gets deposited into the lake and reflects this particular color into the water">
+        <img src="images/morraine_lake_tn.jpg" alt="Emerald Blue Morraine Lake"/></a>
+
+        <a href="images/mounties.jpg" data-fancybox="gallery" data-caption="The Musical Ride is a formal performance of RCMP officers and their horses in 50 communities across Canada every year. The ride helps fundraise for local charities and non-profits while sharing the RCMP heritage and traditions with the public. The ride consists of a full troop of 32 riders and their horses.">
+            <img src="images/mounties_tn.jpg" alt="Royal Canadian Mounted Police marching"/></a>
+        
+        <a href="images/toronto.jpg" data-fancybox="gallery" data-caption="Toronto is the proud home of citizens representing over 200 distinct ethnic origins.
+        Toronto is regularly and rightly called “the most multicultural city in the world.”">
+            <img src="images/toronto_tn.jpg" alt="View of the CN tower in Toronto"/></a>
+            
+        <a href="images/sky.jpg" data-fancybox="gallery" data-caption="Canada is home to 13 dark sky preserves. Dark-Sky Preserves are protected areas that make a special commitment to protect and preserve the night, reducing or eliminating light pollution in all forms.
+
+        Many plants, wildlife and insects rely on darkness to forage, breed and navigate so protecting the dark sky not only provides a magical experience for you, but it also protects ecosystems!">
+            <img src="images/sky_tn.jpg" alt="Picture of the night sky in Jasper"/></a>
+                   
+       
+            </div>
+
+    
+
+      <!--form section -->
+        <div class="contact_form"> 
+           <div id="form">
+               <h3>Interested in sharing your facts about Canada?</h3>
+               
+           <form action="https://formdump.codeinstitute.net/" target="_blank" method="post" >
+               <label for="fname">First Name:</label>
+               <br>
+               <input type="text" id="fname" name="fname" placeholder="First Name" required>
+               <br>
+               <label for="lname">Last Name:</label>
+               <br>
+               <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+               <br>
+               <label for="email">Email:</label>
+               <br>
+               <input type="email" id="email" name="email" placeholder="Email address" required>
+               <br>
+               <label for="textarea"></label>
+               <br>
+               <textarea name="message" style="width:60%; height: 140px;" id="textarea" required>Share your fun fact so that they can be added to the quiz!
+                   </textarea>
+                   <br>
+               <input type="submit" value="Submit">
+               <br>
+           </form>
+       </div>
+       <br>
+       
+   </div>
+
+
+</div>
+<script src="https://kit.fontawesome.com/2688681897.js" crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
