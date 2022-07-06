@@ -124,6 +124,7 @@ The question counter appears at the bottom of the quiz one the start button is c
 
 - #### Score Counter ####
 On the last question the next button will transition to a finish button. When the user click on it, it will relay their score back to them.
+
 ![Score Tally](docs/readme_images/score_tally.GIF)
 
 - #### Fun Facts Page ####
