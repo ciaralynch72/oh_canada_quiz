@@ -196,17 +196,10 @@ I have used several technologies that have enabled this design to work:
 
  I tested each of my pages on lighthouse for both mobile and desktop.
 
- + Quiz Page
+ + Quiz and Fact Page
 
- ![Lighthouse results for home page](docs/readme_images/website_lighthouse.JPG)  
+ ![Lighthouse results](docs/readme_images/lighthouse_combined.JPG)  
 
-+ Fun Facts Page
-
- ![Lighthouse results for community page](docs/readme_images/lighthouse_community.GIF) 
-
- + Gallery Page 
-
-  ![Lighthouse results for gallery page]() 
 
 
 
@@ -293,6 +286,9 @@ I began reading this book after a recommendation by my fellow student Laura Mayo
 
 - #### README.md
 I learned alot about how to approach my README file from past projects of Code Institute student which helped me navigate this huge learning curve. Kudos to those who have shared past projects. 
+
+- #### Code for for email js
+I took the code to get the form to send to emailjs from this [website](https://dev.to/ebereplenty/contact-form-with-emailjs-plain-javascript-365l)
 
 - #### Slack
 Code Institute's slack channel was a huge help in helping with problems and to give a sense of what was expected for projects. Support from fellow students was greatly appreciated.

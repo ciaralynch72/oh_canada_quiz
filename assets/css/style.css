@@ -38,12 +38,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #0090C1 ;
+    color: #82cae1 ;
     border-bottom: 1px solid #F2F2F2;
 }
 
 .active {
-    color: #0090C1;
+    color:  #82cae1;
     border-bottom: 1px solid whitesmoke;
 }
 
@@ -270,6 +270,7 @@ h1 {
     padding: 5px;
     margin: 5px;
  }
+ 
 #form-control {
     width: 40%;
     padding: 5px 10px;
@@ -320,7 +321,7 @@ textarea {
 }
 
 input[type="radio"] {
-    margin-left: 10px;
+    margin-right: 10px;
   }
   
   

@@ -81,49 +81,44 @@
        
           <h2 class="text-center">Interested in sharing your facts about Canada?</h2>
           <!-- contact form -->
-          <form id="myForm">
+          <form id="myForm"> 
             <!-- name -->
             
-              <label for="name" required>Full Name</label>
+              <label>Full Name</label>
               <br>
               <input
-                type="name"
+                type="text"
                 name="name"
                 class="form-control"
-                id="name"
                 placeholder="enter your name"
+                required
               />
               <br>
             
 
             <!-- email -->
     
-              <label for="email" required>Email address</label>
+              <label>Email address</label>
               <br>
               <input
                 type="email"
                 name="email"
                 class="form-control"
-                id="email"
                 placeholder="enter your email"
+                required
               /> 
               <br>
          
             <!-- message -->
           
-              <label for="message">Fun Fact</label>
+              <label for="textarea">Fun Fact</label>
               <br>
-              <textarea class="form-control" id="message" name="message" required></textarea>
+              <textarea id="textarea" name="message" required></textarea>
               <br>
-              <button type="submit"  required>Submit</button>
+              <button type="submit">Submit</button>
+            </form>
             </div>
-
-          
-          </form>
         </div>
-      </div>
-    </div>
-
     <!-- bootstrap js -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -138,10 +133,9 @@
 
     <!-- Email JS -->
     <script
-      type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
     ></script>
-    <script type="text/javascript">
+    <script>
       (function () {
         emailjs.init("user_UHpNJFij8MtQD1aAfs38X");
       })();
@@ -170,11 +164,7 @@
         });
     </script>
     
-
-    
-</div>
 <script src="https://kit.fontawesome.com/2688681897.js" crossorigin="anonymous"></script>
-
 
  <!--to make the carousel work -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
