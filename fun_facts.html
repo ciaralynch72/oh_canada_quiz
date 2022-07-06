@@ -154,11 +154,11 @@
           emailjs.sendForm(serviceID, templateID, this).then(
             (response) => {
               console.log("SUCCESS!", response.status, response.text);
-              alert("SUCCESS!");
+              alert("Thank you for sharing your fun fact with me!");
             },
             (error) => {
               console.log("FAILED...", error);
-              alert("FAILED...", error);
+              alert("Please try again.", error);
             }
           );
         });
